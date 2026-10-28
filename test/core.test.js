@@ -45,7 +45,7 @@ test('mock is deterministic, structured, and chat stays within 450 characters', 
 test('LLM JSON fences/trailing commas repair, missing fields repair, and length limits', async () => {
   assert.deepEqual(repairJSON('Here: ```json\n{"topic":"hello",}\n```'),{topic:'hello'});
   const result=await summarize([], {env:{LLM_API_KEY:'test'}, fetchImpl:async()=>Response.json({choices:[{message:{content:'```json\n{"topic":"Live run","bullets":["one",],"chatReply":"'+ 'x'.repeat(700)+'"}\n```'}}]})});
-  assert.equal(result.topic,'Live run'); assert.equal(result.bullets.length,3); assert.equal(result.chatReply.length,450);
+  assert.equal(result.topic,'Live run'); assert.equal(result.bullets.length,3); assert.equal(result.chatReply,'…');
 });
 test('LLM failures and a hung request return mock within deadline',async()=>{
   const fallback=mockSummarize([]);

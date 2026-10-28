@@ -1,9 +1,6 @@
-export const clip = (value, max) =>
-  String(value ?? '')
-    .replace(/[\u0000-\u001f\u007f]/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim()
-    .slice(0, max);
+import { normalizeText } from './text.js';
+
+export const clip = (value, max) => normalizeText(value).slice(0, max);
 const emotes =
   /^(?:(?:KEKW|PogChamp|LUL|Kappa|MonkaS|Pog|EZ|F|OMEGALUL|GG|HYPE)[\s!,.]*)+$/i;
 export function digest(items, { maxChat = 70, maxChars = 14000 } = {}) {

@@ -78,7 +78,7 @@ Each result is logged by type and status, including missing permission/scope fai
 
 ## Summarization
 
-A catch-up card appears before waiting for the model or chat delivery. It uses the latest panel summary when that summary is at most 30 real seconds and 60 stream-clock seconds old; otherwise it starts with a deterministic summary of the current window. The viewer name is personalized immediately. An in-flight panel summary is shared with catch-up requests instead of queueing a duplicate call. A completed result updates only the still-visible matching card, then supplies the threaded chat reply. Responses from an earlier replay generation are discarded. AI failure still falls back locally.
+A catch-up card appears before waiting for the model or chat delivery. It uses the latest panel summary when that summary is at most 30 real seconds and 60 stream-clock seconds old; otherwise it starts with a deterministic summary of the current window. The viewer name is personalized immediately. An in-flight panel summary is shared with catch-up requests instead of queueing a duplicate call. A completed result updates only the still-visible matching card, then supplies the threaded chat reply. Responses from an earlier replay generation are discarded. Replay jumps seed the panel immediately from the new position before any state is published, so a slow AI refresh does not flash an empty placeholder. AI failure still falls back locally.
 
 
 The ring buffer keeps a 20-minute window with a default cap of 5,000 total items. Late deliveries are sorted when read. Raw chat lines are truncated to 1,000 characters. Old items expire even when no new messages arrive.
@@ -98,7 +98,9 @@ Set `LLM_API_KEY` in `.env` for Node or as a Worker secret for the hosted demo. 
 { topic, bullets[3], moments[{t: epochMilliseconds, label}], jokes[], tellNewcomers, chatReply }
 ```
 
-Markdown fences and trailing JSON commas are repaired. Fields are validated, missing fields filled from a local result, and text lengths capped. Missing keys, network failures, non-2xx responses, invalid JSON, and the eight-second deadline all fall back to a deterministic keyword/event summarizer. The UI identifies AI summaries, local summaries, and fallbacks. The mock is intentionally tuned to the fixture's vocabulary; unfamiliar streams receive a more general event/chat recap.
+The model is asked for a topic of at most 80 characters and a chat reply of at most 280 characters, written as 2–3 short complete sentences starting with the viewer mention. Topics are capped at a whole word with an ellipsis, and the panel uses a two-line CSS clamp with an ellipsis. Replies still have a hard 450-character ceiling: oversized text ends at the last fitting sentence, or at the last whole word plus an ellipsis if no sentence fits. Local and personalized fallback replies use the same trimming rules and target 280 characters. The final Helix send also applies sentence-aware trimming.
+
+Markdown fences and trailing JSON commas are repaired. Fields are validated and missing fields filled from a local result. Missing keys, network failures, non-2xx responses, invalid JSON, and the eight-second deadline all fall back to a deterministic keyword/event summarizer. The UI identifies AI summaries, local summaries, and fallbacks. The mock is intentionally tuned to the fixture's vocabulary; unfamiliar streams receive a more general event/chat recap.
 
 ## Architecture
 

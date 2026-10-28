@@ -41,7 +41,7 @@ test('chat sends only to configured channel, replies to parent, caps text and sp
  const sender=new ChatSender({helix,broadcasterId:'channel',senderId:'bot',now:()=>now,sleep:async ms=>{now+=ms;}});
  await assert.rejects(sender.send({text:'hello',parentId:'p',broadcasterId:'other'}));
  await sender.send({text:'x'.repeat(600),parentId:'p'});await sender.send({text:'second',parentId:'q'});
- assert.deepEqual(calls.map(x=>x.now),[0,2000,4000]);assert.equal(calls[0].body.message.length,450);assert.equal(calls[0].body.reply_parent_message_id,'p');assert.ok(calls.every(x=>x.body.broadcaster_id==='channel'&&!('for_source_only' in x.body)));
+ assert.deepEqual(calls.map(x=>x.now),[0,2000,4000]);assert.equal(calls[0].body.message,'…');assert.equal(calls[0].body.reply_parent_message_id,'p');assert.ok(calls.every(x=>x.body.broadcaster_id==='channel'&&!('for_source_only' in x.body)));
 });
 test('OAuth tokens are stored mode 600; startup validates; concurrent refresh exchanges once',async()=>{
  const dir=await mkdtemp(join(tmpdir(),'clerk-auth-'));let exchanges=0,validations=0;

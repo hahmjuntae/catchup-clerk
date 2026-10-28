@@ -1,4 +1,5 @@
 import { setTimeout as delay } from 'node:timers/promises';
+import { trimReply } from '../core/text.js';
 export class Helix {
   constructor({ auth, clientId, fetchImpl = fetch }) {
     Object.assign(this, { auth, clientId, fetchImpl });
@@ -74,7 +75,7 @@ export class ChatSender {
         body: {
           broadcaster_id: this.broadcasterId,
           sender_id: this.senderId,
-          message: String(text).slice(0, 450),
+          message: trimReply(text, 450),
           reply_parent_message_id: parentId
         }
       });

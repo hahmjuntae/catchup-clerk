@@ -60,6 +60,13 @@ export class Clerk {
     this.status = this.mode === 'demo' ? 'Demo replay' : 'Connecting to Twitch';
     this.refreshing = false;
   }
+  seedSummary() {
+    const now = this.now();
+    this.summary = mockSummarize(this.timeline.snapshot(now), { now });
+    this.backend = 'mock';
+    this.updatedAt = now;
+    this.summaryWallAt = this.wallNow();
+  }
   rememberReply(messageId) {
     if (typeof messageId !== 'string' || !messageId) return;
     this.sentMessageIds.set(messageId, this.now());
