@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+.dev.vars
+.data/
+node_modules/
+.wrangler/
+public/core/
+public/fixtures/
+.DS_Store

@@ -1,0 +1,4233 @@
+{
+  "channel": "LanternLark",
+  "game": "Ember Vault",
+  "durationMs": 1500000,
+  "seed": 20261028,
+  "items": [
+    {
+      "ts": 0,
+      "kind": "event",
+      "user": "LanternLark",
+      "text": "LanternLark went live",
+      "eventType": "stream.online",
+      "meta": {}
+    },
+    {
+      "ts": 2000,
+      "kind": "event",
+      "user": "LanternLark",
+      "text": "Category: Just Chatting. Title: Tea first, dungeon later",
+      "eventType": "channel.update",
+      "meta": {
+        "category": "Just Chatting",
+        "title": "Tea first, dungeon later"
+      }
+    },
+    {
+      "ts": 6724,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-0"
+      }
+    },
+    {
+      "ts": 9477,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-1"
+      }
+    },
+    {
+      "ts": 13382,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-2"
+      }
+    },
+    {
+      "ts": 17705,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-3"
+      }
+    },
+    {
+      "ts": 21280,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-4"
+      }
+    },
+    {
+      "ts": 23633,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Tea check before the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-5"
+      }
+    },
+    {
+      "ts": 28002,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-6"
+      }
+    },
+    {
+      "ts": 31883,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-7"
+      }
+    },
+    {
+      "ts": 35221,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-8"
+      }
+    },
+    {
+      "ts": 39848,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "I brought snacks for this run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-9"
+      }
+    },
+    {
+      "ts": 43123,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-10"
+      }
+    },
+    {
+      "ts": 47517,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-11"
+      }
+    },
+    {
+      "ts": 51337,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-12"
+      }
+    },
+    {
+      "ts": 54248,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "Tea check before the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-13"
+      }
+    },
+    {
+      "ts": 58185,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-14"
+      }
+    },
+    {
+      "ts": 60748,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-15"
+      }
+    },
+    {
+      "ts": 64450,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Tea check before the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-16"
+      }
+    },
+    {
+      "ts": 67969,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-17"
+      }
+    },
+    {
+      "ts": 73479,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-18"
+      }
+    },
+    {
+      "ts": 76084,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-19"
+      }
+    },
+    {
+      "ts": 79437,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-20"
+      }
+    },
+    {
+      "ts": 83646,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-21"
+      }
+    },
+    {
+      "ts": 87991,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-22"
+      }
+    },
+    {
+      "ts": 90171,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-23"
+      }
+    },
+    {
+      "ts": 95786,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "I brought snacks for this run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-24"
+      }
+    },
+    {
+      "ts": 98338,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "I brought snacks for this run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-25"
+      }
+    },
+    {
+      "ts": 100000,
+      "kind": "event",
+      "user": "cobalt_moth",
+      "text": "cobalt_moth followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 102886,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-26"
+      }
+    },
+    {
+      "ts": 105309,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-27"
+      }
+    },
+    {
+      "ts": 109033,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-28"
+      }
+    },
+    {
+      "ts": 114131,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Tea check before the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-29"
+      }
+    },
+    {
+      "ts": 116227,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-30"
+      }
+    },
+    {
+      "ts": 120189,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-31"
+      }
+    },
+    {
+      "ts": 123912,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-32"
+      }
+    },
+    {
+      "ts": 128118,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-33"
+      }
+    },
+    {
+      "ts": 131026,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "I brought snacks for this run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-34"
+      }
+    },
+    {
+      "ts": 135801,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-35"
+      }
+    },
+    {
+      "ts": 138578,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-36"
+      }
+    },
+    {
+      "ts": 141984,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-37"
+      }
+    },
+    {
+      "ts": 147216,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-38"
+      }
+    },
+    {
+      "ts": 150999,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-39"
+      }
+    },
+    {
+      "ts": 153734,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-40"
+      }
+    },
+    {
+      "ts": 157917,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-41"
+      }
+    },
+    {
+      "ts": 160647,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "What game are we playing today?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-42"
+      }
+    },
+    {
+      "ts": 164685,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Audio sounds good now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-43"
+      }
+    },
+    {
+      "ts": 169009,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "That menu music is so good",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-44"
+      }
+    },
+    {
+      "ts": 172053,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Just got home, perfect timing",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-45"
+      }
+    },
+    {
+      "ts": 176684,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "LanternLark has the coziest starting screen",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-46"
+      }
+    },
+    {
+      "ts": 180000,
+      "kind": "event",
+      "user": "LanternLark",
+      "text": "Category changed to Ember Vault. Title: One lantern, one very questionable plan",
+      "eventType": "channel.update",
+      "meta": {
+        "category": "Ember Vault",
+        "title": "One lantern, one very questionable plan"
+      }
+    },
+    {
+      "ts": 180076,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-47"
+      }
+    },
+    {
+      "ts": 183431,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-48"
+      }
+    },
+    {
+      "ts": 187188,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-49"
+      }
+    },
+    {
+      "ts": 190518,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-50"
+      }
+    },
+    {
+      "ts": 195036,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-51"
+      }
+    },
+    {
+      "ts": 199347,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-52"
+      }
+    },
+    {
+      "ts": 202964,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-53"
+      }
+    },
+    {
+      "ts": 206770,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-54"
+      }
+    },
+    {
+      "ts": 208923,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-55"
+      }
+    },
+    {
+      "ts": 213615,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-56"
+      }
+    },
+    {
+      "ts": 216256,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-57"
+      }
+    },
+    {
+      "ts": 221496,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-58"
+      }
+    },
+    {
+      "ts": 224939,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-59"
+      }
+    },
+    {
+      "ts": 228433,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-60"
+      }
+    },
+    {
+      "ts": 230967,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-61"
+      }
+    },
+    {
+      "ts": 236166,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-62"
+      }
+    },
+    {
+      "ts": 239438,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-63"
+      }
+    },
+    {
+      "ts": 242630,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-64"
+      }
+    },
+    {
+      "ts": 246971,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-65"
+      }
+    },
+    {
+      "ts": 249734,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-66"
+      }
+    },
+    {
+      "ts": 254168,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-67"
+      }
+    },
+    {
+      "ts": 256779,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-68"
+      }
+    },
+    {
+      "ts": 260395,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-69"
+      }
+    },
+    {
+      "ts": 265000,
+      "kind": "event",
+      "user": "fable_finch",
+      "text": "fable_finch followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 265375,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-70"
+      }
+    },
+    {
+      "ts": 267914,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-71"
+      }
+    },
+    {
+      "ts": 271965,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-72"
+      }
+    },
+    {
+      "ts": 275985,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-73"
+      }
+    },
+    {
+      "ts": 278995,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-74"
+      }
+    },
+    {
+      "ts": 282502,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-75"
+      }
+    },
+    {
+      "ts": 286552,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-76"
+      }
+    },
+    {
+      "ts": 290757,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-77"
+      }
+    },
+    {
+      "ts": 295098,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-78"
+      }
+    },
+    {
+      "ts": 298657,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-79"
+      }
+    },
+    {
+      "ts": 301802,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-80"
+      }
+    },
+    {
+      "ts": 306657,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-81"
+      }
+    },
+    {
+      "ts": 310111,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-82"
+      }
+    },
+    {
+      "ts": 313650,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-83"
+      }
+    },
+    {
+      "ts": 317678,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-84"
+      }
+    },
+    {
+      "ts": 320454,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-85"
+      }
+    },
+    {
+      "ts": 323751,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-86"
+      }
+    },
+    {
+      "ts": 327234,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-87"
+      }
+    },
+    {
+      "ts": 330681,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-88"
+      }
+    },
+    {
+      "ts": 335576,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-89"
+      }
+    },
+    {
+      "ts": 339549,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-90"
+      }
+    },
+    {
+      "ts": 342816,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-91"
+      }
+    },
+    {
+      "ts": 346070,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-92"
+      }
+    },
+    {
+      "ts": 349115,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-93"
+      }
+    },
+    {
+      "ts": 354095,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-94"
+      }
+    },
+    {
+      "ts": 357344,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-95"
+      }
+    },
+    {
+      "ts": 361293,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-96"
+      }
+    },
+    {
+      "ts": 365715,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-97"
+      }
+    },
+    {
+      "ts": 369118,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-98"
+      }
+    },
+    {
+      "ts": 371879,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-99"
+      }
+    },
+    {
+      "ts": 375989,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-100"
+      }
+    },
+    {
+      "ts": 380564,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-101"
+      }
+    },
+    {
+      "ts": 383000,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-102"
+      }
+    },
+    {
+      "ts": 387312,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-103"
+      }
+    },
+    {
+      "ts": 390398,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-104"
+      }
+    },
+    {
+      "ts": 394209,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-105"
+      }
+    },
+    {
+      "ts": 398787,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-106"
+      }
+    },
+    {
+      "ts": 402205,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-107"
+      }
+    },
+    {
+      "ts": 406520,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-108"
+      }
+    },
+    {
+      "ts": 408411,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-109"
+      }
+    },
+    {
+      "ts": 412333,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-110"
+      }
+    },
+    {
+      "ts": 416214,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-111"
+      }
+    },
+    {
+      "ts": 420870,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-112"
+      }
+    },
+    {
+      "ts": 424760,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-113"
+      }
+    },
+    {
+      "ts": 428635,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-114"
+      }
+    },
+    {
+      "ts": 431077,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-115"
+      }
+    },
+    {
+      "ts": 436177,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-116"
+      }
+    },
+    {
+      "ts": 438266,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-117"
+      }
+    },
+    {
+      "ts": 442971,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-118"
+      }
+    },
+    {
+      "ts": 445618,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-119"
+      }
+    },
+    {
+      "ts": 449861,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-120"
+      }
+    },
+    {
+      "ts": 450000,
+      "kind": "event",
+      "user": "plum_signal",
+      "text": "plum_signal followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 454657,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-121"
+      }
+    },
+    {
+      "ts": 457931,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-122"
+      }
+    },
+    {
+      "ts": 461755,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-123"
+      }
+    },
+    {
+      "ts": 465638,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-124"
+      }
+    },
+    {
+      "ts": 468577,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-125"
+      }
+    },
+    {
+      "ts": 471933,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-126"
+      }
+    },
+    {
+      "ts": 474960,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-127"
+      }
+    },
+    {
+      "ts": 479099,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-128"
+      }
+    },
+    {
+      "ts": 482435,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-129"
+      }
+    },
+    {
+      "ts": 487323,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-130"
+      }
+    },
+    {
+      "ts": 491161,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Save the dash for the traps",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-131"
+      }
+    },
+    {
+      "ts": 494597,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-132"
+      }
+    },
+    {
+      "ts": 498097,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-133"
+      }
+    },
+    {
+      "ts": 502644,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-134"
+      }
+    },
+    {
+      "ts": 504537,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-135"
+      }
+    },
+    {
+      "ts": 509301,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-136"
+      }
+    },
+    {
+      "ts": 512151,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-137"
+      }
+    },
+    {
+      "ts": 516174,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-138"
+      }
+    },
+    {
+      "ts": 521185,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-139"
+      }
+    },
+    {
+      "ts": 524744,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-140"
+      }
+    },
+    {
+      "ts": 527972,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-141"
+      }
+    },
+    {
+      "ts": 532325,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "The pot is our emotional support pot now",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-142"
+      }
+    },
+    {
+      "ts": 534129,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Ember Vault looks beautiful",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-143"
+      }
+    },
+    {
+      "ts": 538720,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-144"
+      }
+    },
+    {
+      "ts": 542284,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "The map has a hidden door on the left",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-145"
+      }
+    },
+    {
+      "ts": 547001,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Lantern and shield is such a strange build",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-146"
+      }
+    },
+    {
+      "ts": 549622,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "That tiny pot survived the whole room",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-147"
+      }
+    },
+    {
+      "ts": 552872,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-148"
+      }
+    },
+    {
+      "ts": 556460,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-149"
+      }
+    },
+    {
+      "ts": 560499,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-150"
+      }
+    },
+    {
+      "ts": 565245,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-151"
+      }
+    },
+    {
+      "ts": 567811,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-152"
+      }
+    },
+    {
+      "ts": 571264,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-153"
+      }
+    },
+    {
+      "ts": 575000,
+      "kind": "event",
+      "user": "fern_byte",
+      "text": "fern_byte subscribed at Tier 1",
+      "eventType": "channel.subscribe",
+      "meta": {
+        "tier": "1000"
+      }
+    },
+    {
+      "ts": 575057,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-154"
+      }
+    },
+    {
+      "ts": 578727,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-155"
+      }
+    },
+    {
+      "ts": 584109,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-156"
+      }
+    },
+    {
+      "ts": 586265,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-157"
+      }
+    },
+    {
+      "ts": 590633,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-158"
+      }
+    },
+    {
+      "ts": 594995,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-159"
+      }
+    },
+    {
+      "ts": 598023,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-160"
+      }
+    },
+    {
+      "ts": 601625,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-161"
+      }
+    },
+    {
+      "ts": 605023,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-162"
+      }
+    },
+    {
+      "ts": 609399,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-163"
+      }
+    },
+    {
+      "ts": 613270,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-164"
+      }
+    },
+    {
+      "ts": 616505,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-165"
+      }
+    },
+    {
+      "ts": 620894,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-166"
+      }
+    },
+    {
+      "ts": 623585,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-167"
+      }
+    },
+    {
+      "ts": 626720,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-168"
+      }
+    },
+    {
+      "ts": 630780,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-169"
+      }
+    },
+    {
+      "ts": 634838,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-170"
+      }
+    },
+    {
+      "ts": 638992,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-171"
+      }
+    },
+    {
+      "ts": 642338,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-172"
+      }
+    },
+    {
+      "ts": 645303,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-173"
+      }
+    },
+    {
+      "ts": 650041,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-174"
+      }
+    },
+    {
+      "ts": 653437,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-175"
+      }
+    },
+    {
+      "ts": 656221,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-176"
+      }
+    },
+    {
+      "ts": 660426,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-177"
+      }
+    },
+    {
+      "ts": 664648,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-178"
+      }
+    },
+    {
+      "ts": 668750,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-179"
+      }
+    },
+    {
+      "ts": 672073,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-180"
+      }
+    },
+    {
+      "ts": 674999,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-181"
+      }
+    },
+    {
+      "ts": 678436,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-182"
+      }
+    },
+    {
+      "ts": 683940,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-183"
+      }
+    },
+    {
+      "ts": 686969,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-184"
+      }
+    },
+    {
+      "ts": 690570,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-185"
+      }
+    },
+    {
+      "ts": 694875,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-186"
+      }
+    },
+    {
+      "ts": 698858,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-187"
+      }
+    },
+    {
+      "ts": 701738,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-188"
+      }
+    },
+    {
+      "ts": 705993,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-189"
+      }
+    },
+    {
+      "ts": 708177,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-190"
+      }
+    },
+    {
+      "ts": 711813,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-191"
+      }
+    },
+    {
+      "ts": 716825,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-192"
+      }
+    },
+    {
+      "ts": 720000,
+      "kind": "event",
+      "user": "MossyCircuit",
+      "text": "MossyCircuit raided with 120 viewers",
+      "eventType": "channel.raid",
+      "meta": {
+        "viewers": 120
+      }
+    },
+    {
+      "ts": 720181,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-193"
+      }
+    },
+    {
+      "ts": 723781,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "LUL",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-194"
+      }
+    },
+    {
+      "ts": 726000,
+      "kind": "event",
+      "user": "plum_signal",
+      "text": "plum_signal followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 727727,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "PogChamp PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-195"
+      }
+    },
+    {
+      "ts": 730833,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "KEKW KEKW",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-196"
+      }
+    },
+    {
+      "ts": 732000,
+      "kind": "event",
+      "user": "woolly_comet",
+      "text": "woolly_comet followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 735190,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-197"
+      }
+    },
+    {
+      "ts": 739000,
+      "kind": "event",
+      "user": "cobalt_moth",
+      "text": "cobalt_moth followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 739320,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "LUL",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-198"
+      }
+    },
+    {
+      "ts": 742606,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "PogChamp PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-199"
+      }
+    },
+    {
+      "ts": 745000,
+      "kind": "event",
+      "user": "sprout_clock",
+      "text": "sprout_clock followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 745878,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "KEKW KEKW",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-200"
+      }
+    },
+    {
+      "ts": 748821,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-201"
+      }
+    },
+    {
+      "ts": 754210,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "LUL",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-202"
+      }
+    },
+    {
+      "ts": 756434,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "PogChamp PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-203"
+      }
+    },
+    {
+      "ts": 760991,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-204"
+      }
+    },
+    {
+      "ts": 761000,
+      "kind": "event",
+      "user": "cobalt_moth",
+      "text": "cobalt_moth followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 765396,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-205"
+      }
+    },
+    {
+      "ts": 767823,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-206"
+      }
+    },
+    {
+      "ts": 772753,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-207"
+      }
+    },
+    {
+      "ts": 775861,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-208"
+      }
+    },
+    {
+      "ts": 779866,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-209"
+      }
+    },
+    {
+      "ts": 782659,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-210"
+      }
+    },
+    {
+      "ts": 787678,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-211"
+      }
+    },
+    {
+      "ts": 790762,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-212"
+      }
+    },
+    {
+      "ts": 794077,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-213"
+      }
+    },
+    {
+      "ts": 798725,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-214"
+      }
+    },
+    {
+      "ts": 800566,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-215"
+      }
+    },
+    {
+      "ts": 804221,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-216"
+      }
+    },
+    {
+      "ts": 809446,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-217"
+      }
+    },
+    {
+      "ts": 812205,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-218"
+      }
+    },
+    {
+      "ts": 817262,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-219"
+      }
+    },
+    {
+      "ts": 819634,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-220"
+      }
+    },
+    {
+      "ts": 823848,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-221"
+      }
+    },
+    {
+      "ts": 827344,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-222"
+      }
+    },
+    {
+      "ts": 831445,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-223"
+      }
+    },
+    {
+      "ts": 833937,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-224"
+      }
+    },
+    {
+      "ts": 838042,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-225"
+      }
+    },
+    {
+      "ts": 840000,
+      "kind": "event",
+      "user": "cobalt_moth",
+      "text": "cobalt_moth celebrated 6 months: for the pot",
+      "eventType": "channel.subscription.message",
+      "meta": {
+        "months": 6
+      }
+    },
+    {
+      "ts": 841586,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-226"
+      }
+    },
+    {
+      "ts": 845534,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-227"
+      }
+    },
+    {
+      "ts": 850150,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-228"
+      }
+    },
+    {
+      "ts": 853598,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-229"
+      }
+    },
+    {
+      "ts": 857511,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-230"
+      }
+    },
+    {
+      "ts": 860467,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-231"
+      }
+    },
+    {
+      "ts": 865254,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-232"
+      }
+    },
+    {
+      "ts": 867168,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-233"
+      }
+    },
+    {
+      "ts": 871277,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-234"
+      }
+    },
+    {
+      "ts": 876430,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-235"
+      }
+    },
+    {
+      "ts": 879380,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-236"
+      }
+    },
+    {
+      "ts": 882446,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-237"
+      }
+    },
+    {
+      "ts": 885791,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-238"
+      }
+    },
+    {
+      "ts": 891136,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-239"
+      }
+    },
+    {
+      "ts": 894770,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-240"
+      }
+    },
+    {
+      "ts": 897665,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-241"
+      }
+    },
+    {
+      "ts": 901329,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-242"
+      }
+    },
+    {
+      "ts": 904745,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-243"
+      }
+    },
+    {
+      "ts": 909482,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-244"
+      }
+    },
+    {
+      "ts": 912966,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-245"
+      }
+    },
+    {
+      "ts": 916822,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-246"
+      }
+    },
+    {
+      "ts": 919023,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-247"
+      }
+    },
+    {
+      "ts": 923310,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-248"
+      }
+    },
+    {
+      "ts": 926494,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-249"
+      }
+    },
+    {
+      "ts": 931522,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-250"
+      }
+    },
+    {
+      "ts": 934829,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-251"
+      }
+    },
+    {
+      "ts": 937884,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-252"
+      }
+    },
+    {
+      "ts": 942549,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-253"
+      }
+    },
+    {
+      "ts": 945281,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-254"
+      }
+    },
+    {
+      "ts": 948526,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-255"
+      }
+    },
+    {
+      "ts": 953420,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-256"
+      }
+    },
+    {
+      "ts": 957655,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-257"
+      }
+    },
+    {
+      "ts": 960000,
+      "kind": "event",
+      "user": "cinder_jam",
+      "text": "cinder_jam followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 960141,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-258"
+      }
+    },
+    {
+      "ts": 964414,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-259"
+      }
+    },
+    {
+      "ts": 967092,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-260"
+      }
+    },
+    {
+      "ts": 970877,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-261"
+      }
+    },
+    {
+      "ts": 974475,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-262"
+      }
+    },
+    {
+      "ts": 975000,
+      "kind": "event",
+      "user": "orbit_kettle",
+      "text": "orbit_kettle gifted 20 subscriptions",
+      "eventType": "channel.subscription.gift",
+      "meta": {
+        "total": 20
+      }
+    },
+    {
+      "ts": 978762,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "The left path has the merchant",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-263"
+      }
+    },
+    {
+      "ts": 982489,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "Lantern build is finally coming together",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-264"
+      }
+    },
+    {
+      "ts": 987230,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-265"
+      }
+    },
+    {
+      "ts": 989379,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-266"
+      }
+    },
+    {
+      "ts": 993562,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-267"
+      }
+    },
+    {
+      "ts": 998126,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "The shield parry restores lantern charge",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-268"
+      }
+    },
+    {
+      "ts": 1001534,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Protect the emotional support pot",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-269"
+      }
+    },
+    {
+      "ts": 1005552,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "That room almost ended the run",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-270"
+      }
+    },
+    {
+      "ts": 1008570,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Do not spend all the coins on soup",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-271"
+      }
+    },
+    {
+      "ts": 1011491,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-272"
+      }
+    },
+    {
+      "ts": 1016549,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-273"
+      }
+    },
+    {
+      "ts": 1019363,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-274"
+      }
+    },
+    {
+      "ts": 1022740,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-275"
+      }
+    },
+    {
+      "ts": 1027574,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-276"
+      }
+    },
+    {
+      "ts": 1031733,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-277"
+      }
+    },
+    {
+      "ts": 1035344,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-278"
+      }
+    },
+    {
+      "ts": 1038654,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-279"
+      }
+    },
+    {
+      "ts": 1041364,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-280"
+      }
+    },
+    {
+      "ts": 1045483,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-281"
+      }
+    },
+    {
+      "ts": 1048810,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-282"
+      }
+    },
+    {
+      "ts": 1054019,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-283"
+      }
+    },
+    {
+      "ts": 1056281,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-284"
+      }
+    },
+    {
+      "ts": 1060173,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-285"
+      }
+    },
+    {
+      "ts": 1064833,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-286"
+      }
+    },
+    {
+      "ts": 1068846,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-287"
+      }
+    },
+    {
+      "ts": 1071000,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-288"
+      }
+    },
+    {
+      "ts": 1075865,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-289"
+      }
+    },
+    {
+      "ts": 1078299,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-290"
+      }
+    },
+    {
+      "ts": 1080000,
+      "kind": "event",
+      "user": "velvet_turnip",
+      "text": "velvet_turnip cheered 1500 bits: parry fund",
+      "eventType": "channel.cheer",
+      "meta": {
+        "bits": 1500
+      }
+    },
+    {
+      "ts": 1083395,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-291"
+      }
+    },
+    {
+      "ts": 1085654,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-292"
+      }
+    },
+    {
+      "ts": 1091017,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-293"
+      }
+    },
+    {
+      "ts": 1094237,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-294"
+      }
+    },
+    {
+      "ts": 1098485,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-295"
+      }
+    },
+    {
+      "ts": 1100867,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-296"
+      }
+    },
+    {
+      "ts": 1105032,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-297"
+      }
+    },
+    {
+      "ts": 1108178,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-298"
+      }
+    },
+    {
+      "ts": 1112245,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-299"
+      }
+    },
+    {
+      "ts": 1115598,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-300"
+      }
+    },
+    {
+      "ts": 1120002,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-301"
+      }
+    },
+    {
+      "ts": 1122726,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-302"
+      }
+    },
+    {
+      "ts": 1127936,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-303"
+      }
+    },
+    {
+      "ts": 1130257,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-304"
+      }
+    },
+    {
+      "ts": 1135488,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-305"
+      }
+    },
+    {
+      "ts": 1139089,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-306"
+      }
+    },
+    {
+      "ts": 1140000,
+      "kind": "event",
+      "user": "LanternLark",
+      "text": "Title changed: Glass Warden attempts | protect the pot",
+      "eventType": "channel.update",
+      "meta": {
+        "category": "Ember Vault",
+        "title": "Glass Warden attempts | protect the pot"
+      }
+    },
+    {
+      "ts": 1141895,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-307"
+      }
+    },
+    {
+      "ts": 1146071,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-308"
+      }
+    },
+    {
+      "ts": 1148665,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-309"
+      }
+    },
+    {
+      "ts": 1152765,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-310"
+      }
+    },
+    {
+      "ts": 1157226,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-311"
+      }
+    },
+    {
+      "ts": 1160155,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-312"
+      }
+    },
+    {
+      "ts": 1164704,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-313"
+      }
+    },
+    {
+      "ts": 1167122,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-314"
+      }
+    },
+    {
+      "ts": 1171321,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-315"
+      }
+    },
+    {
+      "ts": 1174272,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-316"
+      }
+    },
+    {
+      "ts": 1178702,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-317"
+      }
+    },
+    {
+      "ts": 1183075,
+      "kind": "chat",
+      "user": "soup_cartographer",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-318"
+      }
+    },
+    {
+      "ts": 1185800,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-319"
+      }
+    },
+    {
+      "ts": 1189737,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-320"
+      }
+    },
+    {
+      "ts": 1193033,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-321"
+      }
+    },
+    {
+      "ts": 1197589,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-322"
+      }
+    },
+    {
+      "ts": 1201975,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-323"
+      }
+    },
+    {
+      "ts": 1205447,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-324"
+      }
+    },
+    {
+      "ts": 1208445,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-325"
+      }
+    },
+    {
+      "ts": 1212223,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-326"
+      }
+    },
+    {
+      "ts": 1215416,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-327"
+      }
+    },
+    {
+      "ts": 1220490,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-328"
+      }
+    },
+    {
+      "ts": 1223753,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-329"
+      }
+    },
+    {
+      "ts": 1227431,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-330"
+      }
+    },
+    {
+      "ts": 1229732,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-331"
+      }
+    },
+    {
+      "ts": 1230000,
+      "kind": "event",
+      "user": "velvet_turnip",
+      "text": "velvet_turnip followed",
+      "eventType": "channel.follow",
+      "meta": {}
+    },
+    {
+      "ts": 1235321,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-332"
+      }
+    },
+    {
+      "ts": 1237471,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-333"
+      }
+    },
+    {
+      "ts": 1240842,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-334"
+      }
+    },
+    {
+      "ts": 1246148,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "The emotional support pot believes in you",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-335"
+      }
+    },
+    {
+      "ts": 1249957,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-336"
+      }
+    },
+    {
+      "ts": 1253232,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "Shield parry into lantern burst looks strong",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-337"
+      }
+    },
+    {
+      "ts": 1256241,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-338"
+      }
+    },
+    {
+      "ts": 1259968,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "The boss has so much health",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-339"
+      }
+    },
+    {
+      "ts": 1260000,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "!recap",
+      "eventType": "",
+      "meta": {
+        "isMod": true,
+        "messageId": "recap-1"
+      }
+    },
+    {
+      "ts": 1264163,
+      "kind": "chat",
+      "user": "tiny_cairn",
+      "text": "Dodge after the second bell, not the first",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-340"
+      }
+    },
+    {
+      "ts": 1267329,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-341"
+      }
+    },
+    {
+      "ts": 1270463,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "Is this the final boss or just floor three?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-342"
+      }
+    },
+    {
+      "ts": 1275532,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "Glass Warden phase two has the delayed slam",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-343"
+      }
+    },
+    {
+      "ts": 1279110,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "We reached the Glass Warden with one flask",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-344"
+      }
+    },
+    {
+      "ts": 1283228,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-345"
+      }
+    },
+    {
+      "ts": 1286749,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-346"
+      }
+    },
+    {
+      "ts": 1289831,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "PogChamp PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-347"
+      }
+    },
+    {
+      "ts": 1290000,
+      "kind": "chat",
+      "user": "late_lantern",
+      "text": "!catchup",
+      "eventType": "",
+      "meta": {
+        "messageId": "catchup-late_lantern",
+        "userId": "late_lantern"
+      }
+    },
+    {
+      "ts": 1293452,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "KEKW KEKW",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-348"
+      }
+    },
+    {
+      "ts": 1297411,
+      "kind": "chat",
+      "user": "marble_fern",
+      "text": "PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-349"
+      }
+    },
+    {
+      "ts": 1301627,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "LUL",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-350"
+      }
+    },
+    {
+      "ts": 1303799,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "PogChamp PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-351"
+      }
+    },
+    {
+      "ts": 1307931,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "KEKW KEKW",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-352"
+      }
+    },
+    {
+      "ts": 1311185,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-353"
+      }
+    },
+    {
+      "ts": 1315918,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "LUL",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-354"
+      }
+    },
+    {
+      "ts": 1319753,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "PogChamp PogChamp",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-355"
+      }
+    },
+    {
+      "ts": 1322230,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "That last parry was unbelievable",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-356"
+      }
+    },
+    {
+      "ts": 1327165,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-357"
+      }
+    },
+    {
+      "ts": 1331304,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Victory and the emotional support pot is still intact",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-358"
+      }
+    },
+    {
+      "ts": 1333769,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "Victory and the emotional support pot is still intact",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-359"
+      }
+    },
+    {
+      "ts": 1338947,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-360"
+      }
+    },
+    {
+      "ts": 1340750,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-361"
+      }
+    },
+    {
+      "ts": 1346130,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-362"
+      }
+    },
+    {
+      "ts": 1349133,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-363"
+      }
+    },
+    {
+      "ts": 1353121,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-364"
+      }
+    },
+    {
+      "ts": 1357449,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-365"
+      }
+    },
+    {
+      "ts": 1360954,
+      "kind": "chat",
+      "user": "dusk_pickle",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-366"
+      }
+    },
+    {
+      "ts": 1363139,
+      "kind": "chat",
+      "user": "velvet_turnip",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-367"
+      }
+    },
+    {
+      "ts": 1367200,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-368"
+      }
+    },
+    {
+      "ts": 1370432,
+      "kind": "chat",
+      "user": "cinder_jam",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-369"
+      }
+    },
+    {
+      "ts": 1375623,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-370"
+      }
+    },
+    {
+      "ts": 1379004,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Victory and the emotional support pot is still intact",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-371"
+      }
+    },
+    {
+      "ts": 1380000,
+      "kind": "event",
+      "user": "bramble_loop",
+      "text": "bramble_loop cheered 500 bits for the victory",
+      "eventType": "channel.cheer",
+      "meta": {
+        "bits": 500
+      }
+    },
+    {
+      "ts": 1380000,
+      "kind": "chat",
+      "user": "paper_badger",
+      "text": "!catchup",
+      "eventType": "",
+      "meta": {
+        "messageId": "catchup-paper_badger",
+        "userId": "paper_badger"
+      }
+    },
+    {
+      "ts": 1383018,
+      "kind": "chat",
+      "user": "moss_packet",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-372"
+      }
+    },
+    {
+      "ts": 1385709,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-373"
+      }
+    },
+    {
+      "ts": 1389656,
+      "kind": "chat",
+      "user": "soft_static",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-374"
+      }
+    },
+    {
+      "ts": 1394306,
+      "kind": "chat",
+      "user": "woolly_comet",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-375"
+      }
+    },
+    {
+      "ts": 1396346,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-376"
+      }
+    },
+    {
+      "ts": 1401840,
+      "kind": "chat",
+      "user": "toast_archivist",
+      "text": "Next floor unlocked: the Ashen Library",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-377"
+      }
+    },
+    {
+      "ts": 1404334,
+      "kind": "chat",
+      "user": "cobalt_moth",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-378"
+      }
+    },
+    {
+      "ts": 1408908,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-379"
+      }
+    },
+    {
+      "ts": 1412211,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Victory and the emotional support pot is still intact",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-380"
+      }
+    },
+    {
+      "ts": 1415004,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-381"
+      }
+    },
+    {
+      "ts": 1419773,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Next floor unlocked: the Ashen Library",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-382"
+      }
+    },
+    {
+      "ts": 1423174,
+      "kind": "chat",
+      "user": "fable_finch",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-383"
+      }
+    },
+    {
+      "ts": 1426580,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "That last parry was unbelievable",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-384"
+      }
+    },
+    {
+      "ts": 1430910,
+      "kind": "chat",
+      "user": "quiet_pixel",
+      "text": "Victory and the emotional support pot is still intact",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-385"
+      }
+    },
+    {
+      "ts": 1433859,
+      "kind": "chat",
+      "user": "river_spool",
+      "text": "The shield carried that entire boss fight",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-386"
+      }
+    },
+    {
+      "ts": 1438190,
+      "kind": "chat",
+      "user": "fern_byte",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-387"
+      }
+    },
+    {
+      "ts": 1442494,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-388"
+      }
+    },
+    {
+      "ts": 1445515,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "That last parry was unbelievable",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-389"
+      }
+    },
+    {
+      "ts": 1448364,
+      "kind": "chat",
+      "user": "plum_signal",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-390"
+      }
+    },
+    {
+      "ts": 1452222,
+      "kind": "chat",
+      "user": "sleepy_aster",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-391"
+      }
+    },
+    {
+      "ts": 1457250,
+      "kind": "chat",
+      "user": "pocket_rune",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-392"
+      }
+    },
+    {
+      "ts": 1461021,
+      "kind": "chat",
+      "user": "biscuit_scope",
+      "text": "That last parry was unbelievable",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-393"
+      }
+    },
+    {
+      "ts": 1464093,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Glass Warden defeated with one heart left!",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-394"
+      }
+    },
+    {
+      "ts": 1468112,
+      "kind": "chat",
+      "user": "bramble_loop",
+      "text": "Boss down! The lantern build actually worked",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-395"
+      }
+    },
+    {
+      "ts": 1470000,
+      "kind": "chat",
+      "user": "mint_satellite",
+      "text": "!catchup",
+      "eventType": "",
+      "meta": {
+        "messageId": "catchup-mint_satellite",
+        "userId": "mint_satellite"
+      }
+    },
+    {
+      "ts": 1471735,
+      "kind": "chat",
+      "user": "sprout_clock",
+      "text": "Victory and the emotional support pot is still intact",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-396"
+      }
+    },
+    {
+      "ts": 1474105,
+      "kind": "chat",
+      "user": "copper_owl",
+      "text": "Does the lantern heal or only light the room?",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-397"
+      }
+    },
+    {
+      "ts": 1479417,
+      "kind": "chat",
+      "user": "orbit_kettle",
+      "text": "That last parry was unbelievable",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-398"
+      }
+    },
+    {
+      "ts": 1482848,
+      "kind": "chat",
+      "user": "amber_socket",
+      "text": "That last parry was unbelievable",
+      "eventType": "",
+      "meta": {
+        "messageId": "demo-399"
+      }
+    }
+  ]
+}
