@@ -4,6 +4,8 @@ Catch-up Clerk gives late arrivals context from the last 20 minutes of Twitch ch
 
 The panel shows the current topic, timestamped key moments, open questions and running jokes, recent events, recent catch-up requesters, and a short line the streamer can read aloud. Live clock times use each viewer's browser time zone; timestamps stay in epoch milliseconds in the server/API. Demo times consistently use the fictional stream's UTC clock. It receives state updates twice per second and refreshes its summary every 15 seconds. Broadcasters and moderators can use `!recap` to request a summary immediately.
 
+Hosted demo: https://catchup-clerk.graphite-site.workers.dev/demo
+
 Node 26, ES modules, native HTTP/fetch/WebSocket, and browser JavaScript. No runtime packages or UI frameworks. Wrangler is the only direct development dependency.
 
 ## Quick start
@@ -202,9 +204,17 @@ For a recording, open `/demo` at 1920×1080 and click **Jump to catch-up**. Use 
 
 ## Built with Codex
 
-Implemented with Codex: shared logic, deterministic fixture, Node and Worker runtimes, Twitch integration, UI, tests, and documentation.
+The code, tests, demo fixture, and this README were written by OpenAI Codex in one session. Each later round resumed the same session with `codex exec resume`, using bug reports from testing against a real channel.
 
-Codex session ID: <SESSION_ID>
+Codex session ID: `01a1824c-c5ae-7343-821f-3096db1449b4`
+
+## Live check
+
+Tested on 2026-10-28 against the channel `hahmjuntae` with `ALLOW_SELF_COMMANDS=1`:
+
+- OAuth sign-in completed and all 10 EventSub subscriptions returned `subscribed`.
+- `!catchup` typed in Twitch chat produced a threaded reply through Helix `POST /chat/messages`.
+- The panel showed an AI summary built from the chat in that window.
 
 ## License
 
