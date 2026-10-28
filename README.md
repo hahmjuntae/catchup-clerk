@@ -216,7 +216,7 @@ Tested on 2026-10-28 against the channel `hahmjuntae` with `ALLOW_SELF_COMMANDS=
 
 - OAuth sign-in completed and all 10 EventSub subscriptions returned `subscribed`.
 - `!catchup` typed in Twitch chat produced a threaded reply through Helix `POST /chat/messages`.
-- The panel showed an AI summary built from the chat in that window.
+- The panel showed the summary of that window.
 
 ## License
 
