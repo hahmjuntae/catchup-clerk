@@ -33,6 +33,10 @@ Replies in demo mode are labeled **would post in chat**. No Twitch requests are 
 5. Authorize as the channel owner for the full set of events. Open `/panel`. From a different viewer account, send `!catchup` in that channel.
 6. Add an OBS Browser Source with URL `http://localhost:3101/overlay`, width **1920**, height **1080**. Its background is transparent. The panel includes a smaller preview over an illustrated backdrop; it is not actual game footage.
 
+For a **single-account live test**, set `ALLOW_SELF_COMMANDS=1` in `.env` and restart `npm run dev`. Authorize as the broadcaster, then type `!catchup` from that same account. It uses the normal cooldowns and sends a threaded reply, updates the panel, and shows the overlay. `!recap` still requires broadcaster or moderator privileges. This flag is a testing aid and is **off by default**; unset it or set it to `0` after testing.
+
+When no token file exists, startup prints `Live: open http://localhost:3101/auth/login to authorize` (using your configured port). Once connected, a startup summary lists the resolved channel login and every EventSub subscription result. These logs contain no tokens or keys.
+
 The authorized account is also the chat sender. A dedicated bot/moderator account can read and send chat, but subscriptions and cheers generally need authorization from the broadcaster; unavailable subscriptions are logged individually and do not prevent the rest from running. This small version stores one authorization, not separate broadcaster and bot grants.
 
 OAuth requests these scopes:
@@ -43,7 +47,9 @@ user:read:chat user:write:chat moderator:read:followers channel:read:subscriptio
 
 `/auth/login` creates an expiring, single-use state token bound to an HttpOnly, SameSite cookie. `/auth/callback` exchanges the authorization code on the server. Access and refresh tokens are written atomically to `.data/tokens.json` with mode `600`. The directory is gitignored. Tokens are validated on startup and hourly, refreshed before expiration and once on HTTP 401. Keys, tokens, authorization codes, and chat contents are not logged.
 
-The app ignores its own account's incoming chat to avoid bot feedback. A privileged `!recap` remains available when the channel owner is also the sending account. `!catchup` has a 60-second per-user cooldown and a 15-second global cooldown; blocked requests are shown in the panel without generating another chat reply. Privileged `!recap` requests have a two-second debounce.
+The broadcaster's ordinary chat stays in the timeline as context, whether or not `ALLOW_SELF_COMMANDS` is enabled. Non-command messages never enter command processing. The app records message IDs returned by Helix and excludes those outgoing replies from both the timeline and commands. Own-account notifications that arrive while a send is pending wait for its result before that check, so an early echo cannot bypass the reply-ID guard. IDs are held only in bounded memory and survive connection resets until their window expires.
+
+With the flag off, the sender's `!catchup` is ignored; the existing privileged `!recap` remains available when the channel owner is also the sending account. `!catchup` has a 60-second per-user cooldown and a 15-second global cooldown; blocked requests are shown in the panel without generating another chat reply. Privileged `!recap` requests have a two-second debounce.
 
 ## Twitch integration
 
@@ -164,6 +170,7 @@ All supported environment variables are listed with empty values in `.env.exampl
 | `TWITCH_CLIENT_SECRET` | Required in live mode |
 | `TWITCH_CHANNEL` | Required channel login in live mode |
 | `TWITCH_REDIRECT_URI` | `http://localhost:3101/auth/callback` |
+| `ALLOW_SELF_COMMANDS` | Off by default; exactly `1` enables authorized-account commands for live testing |
 
 For a local Worker key, use an ignored `.dev.vars` file containing `LLM_API_KEY=...`. Do not put secrets in `wrangler.toml`, browser files, or the fixture.
 
@@ -175,7 +182,7 @@ npm run fixture
 npm run demo
 ```
 
-Tests cover timeline expiration and capacity, a 5,000-message flood, commands and cooldowns, deterministic summaries, JSON repair, LLM failure/timeout, the complete three-viewer replay, stale async results, Worker validation/limits/assets routes, EventSub welcome/notification/reconnect, event normalization, token permissions/refresh, OAuth state rejection, and channel-bound chat throttling.
+Tests cover timeline expiration and capacity, a 5,000-message flood, commands and cooldowns, deterministic summaries, JSON repair, LLM failure/timeout, the complete three-viewer replay, stale async results, Worker validation/limits/assets routes, EventSub welcome/notification/reconnect, event normalization, token permissions/refresh, OAuth state rejection, channel-bound chat throttling, self-command testing, broadcaster context, outgoing reply-ID filtering (including early echoes), and startup logs.
 
 For a recording, open `/demo` at 1920×1080, click **Jump to catch-up**, and let all three welcome cards play. The on-page game scene is a CSS illustration. `/panel` is also suitable as an OBS custom browser dock. `Ctrl+C` stops a foreground server.
 

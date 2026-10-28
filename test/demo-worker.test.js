@@ -17,9 +17,10 @@ test('reset prevents an in-flight summary from publishing to a new replay',async
  let finish,started;const began=new Promise(resolve=>{started=resolve;});const events=[];const clerk=new Clerk({now:()=>1000,summarizeFn:()=>new Promise(resolve=>{finish=resolve;started();}),emit:(type)=>events.push(type)});
  const pending=clerk.ingest({ts:1000,kind:'chat',user:'new',text:'!catchup',meta:{messageId:'p'}});await began;clerk.reset();finish(mockSummarize([]));await pending;assert.equal(clerk.joiners.length,0);assert.ok(!events.includes('catchup'));
 });
-test('own-account recap works for broadcaster; automatic own-account replies are ignored',async()=>{
+test('own-account recap works for broadcaster; known outgoing replies are ignored',async()=>{
  const clerk=new Clerk({now:()=>1000,ownUserId:'owner'});
- clerk.ingest({ts:1000,kind:'chat',user:'owner',text:'bot reply',meta:{userId:'owner'}});assert.equal(clerk.timeline.size,0);
+ clerk.rememberReply('sent-reply');
+ clerk.ingest({ts:1000,kind:'chat',user:'owner',text:'bot reply',meta:{userId:'owner',messageId:'sent-reply'}});assert.equal(clerk.timeline.size,0);
  await clerk.ingest({ts:1000,kind:'chat',user:'owner',text:'!recap',meta:{userId:'owner',isBroadcaster:true}});assert.equal(clerk.updatedAt,1000);
 });
 test('Worker summarizes without Twitch credentials, rejects malformed/large requests and foreign origins',async()=>{
