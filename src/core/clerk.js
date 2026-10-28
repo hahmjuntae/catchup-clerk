@@ -1,6 +1,11 @@
 import { Timeline } from './timeline.js';
 import { Commands } from './commands.js';
-import { summarize, mockSummarize } from './summarizer.js';
+import {
+  summarize,
+  mockSummarize,
+  personalizeSummary,
+  validateSummary
+} from './summarizer.js';
 
 export class Clerk {
   constructor({
@@ -12,6 +17,7 @@ export class Clerk {
     ownLogin,
     allowSelfCommands = false,
     now = () => Date.now(),
+    wallNow = () => Date.now(),
     summarizeFn = summarize,
     sendChat = async () => {},
     emit = () => {}
@@ -20,6 +26,7 @@ export class Clerk {
       mode,
       channel,
       now,
+      wallNow,
       summarizeFn,
       sendChat,
       emit,
@@ -35,6 +42,10 @@ export class Clerk {
   }
   reset() {
     this.generation++;
+    this.queue = Promise.resolve();
+    this.pendingSummary = null;
+    this.summaryWallAt = null;
+    this.streamInfo = {};
     this.timeline.clear();
     this.commands = new Commands({
       ownUserId: this.ownUserId,
@@ -73,89 +84,148 @@ export class Clerk {
     if (item.kind === 'chat' && this.sentMessageIds.has(item.meta?.messageId))
       return;
     // Human broadcaster chat is part of the stream, including when sender = owner.
-    if (
-      !this.timeline.add(item, this.now()) ||
-      !commands ||
-      item.kind !== 'chat'
-    )
-      return;
+    if (!this.timeline.add(item, this.now())) return;
+    if (item.eventType === 'channel.update') {
+      this.streamInfo = {
+        category: item.meta?.category ?? this.streamInfo.category,
+        title: item.meta?.title ?? this.streamInfo.title,
+        updatedAt: item.ts
+      };
+    }
+    if (!commands || item.kind !== 'chat') return;
     const command = this.commands.check(item, this.now());
     if (command.command === 'catchup') {
       const joiner = {
         user: item.user,
         ts: this.now(),
         status: command.allowed
-          ? 'Preparing recap'
+          ? 'Recap ready; preparing chat'
           : `Wait ${command.retryAfter}s`
       };
       this.joiners.unshift(joiner);
       this.joiners = this.joiners.slice(0, 12);
       this.publish();
-      if (command.allowed) return this.refresh(item.user, item, joiner);
+      if (command.allowed) return this.catchUp(item.user, item, joiner);
       return command;
     }
     if (command.allowed && command.command === 'recap') return this.refresh();
   }
-  refresh(viewer, parent, joiner) {
+  track(work) {
+    // Expose completion for replay/tests without serializing independent work.
+    this.queue = Promise.allSettled([this.queue, work]).then(() => {});
+    return work;
+  }
+  refresh() {
+    return this.track(this.requestSummary('newcomer'));
+  }
+  requestSummary(viewer) {
+    if (this.pendingSummary) return this.pendingSummary;
     const generation = this.generation;
-    const run = async () => {
-      if (generation !== this.generation) return;
-      this.refreshing = true;
-      this.publish();
-      try {
-        const items = this.timeline.snapshot(this.now());
+    const now = this.now();
+    const startedAt = this.wallNow();
+    const items = this.timeline.snapshot(now);
+    this.refreshing = true;
+    this.publish();
+    const work = Promise.resolve()
+      .then(async () => {
         let backend = 'mock';
-        const result = await this.summarizeFn(items, {
-          viewer: viewer || 'newcomer',
-          now: this.now(),
-          onBackend: (name) => {
-            backend = name;
-          }
-        });
-        if (generation !== this.generation) return;
+        let result;
+        const fallback = mockSummarize(items, { viewer, now });
+        try {
+          result = validateSummary(
+            await this.summarizeFn(items, {
+              viewer,
+              now,
+              onBackend: (name) => {
+                backend = name;
+              }
+            }),
+            fallback,
+            { now }
+          );
+        } catch {
+          backend = 'mock fallback';
+          result = fallback;
+        }
+        if (generation !== this.generation) return null;
         this.summary = result;
         this.backend = backend;
-        this.updatedAt = this.now();
-        if (viewer) {
-          const reply = {
-            ts: this.now(),
-            user: viewer,
-            text: result.chatReply,
-            parentId: parent?.meta?.messageId,
-            status: this.mode === 'demo' ? 'would post in chat' : 'sending'
-          };
-          this.replies.unshift(reply);
-          this.replies = this.replies.slice(0, 12);
-          try {
-            await this.sendChat(reply);
-            if (generation !== this.generation) return;
-            if (this.mode !== 'demo') reply.status = 'posted in chat';
-            joiner.status = 'Caught up';
-          } catch (error) {
-            reply.status =
-              error.code === 'SHARED_CHAT'
-                ? 'Chat paused during Shared Chat'
-                : 'Chat delivery failed';
-            joiner.status = 'Recap ready; chat not sent';
-          }
-          if (generation !== this.generation) return;
-          this.emit('catchup', {
-            viewer,
-            summary: result,
-            ts: this.now(),
-            id: `${generation}-${this.now()}-${viewer}`,
-            durationMs: 12000
-          });
-        }
-      } finally {
-        if (generation === this.generation) {
-          this.refreshing = false;
-          this.publish();
-        }
-      }
+        this.updatedAt = now;
+        this.summaryWallAt = startedAt;
+        return { summary: result, viewer };
+      })
+      .finally(() => {
+        if (generation !== this.generation) return;
+        this.pendingSummary = null;
+        this.refreshing = false;
+        this.publish();
+      });
+    this.pendingSummary = work;
+    return work;
+  }
+  catchUp(viewer, parent, joiner) {
+    const generation = this.generation;
+    const now = this.now();
+    const startedAt = this.wallNow();
+    const fresh =
+      this.updatedAt !== null &&
+      this.summaryWallAt !== null &&
+      startedAt - this.summaryWallAt <= 30_000 &&
+      now - this.updatedAt >= 0 &&
+      now - this.updatedAt <= 60_000;
+    const preview = personalizeSummary(
+      fresh
+        ? this.summary
+        : mockSummarize(this.timeline.snapshot(now), { viewer, now }),
+      viewer
+    );
+    const card = {
+      viewer,
+      summary: preview,
+      ts: now,
+      id: `${generation}-${now}-${viewer}`,
+      durationMs: 12000,
+      phase: 'initial'
     };
-    this.queue = this.queue.catch(() => {}).then(run);
-    return this.queue;
+    // Never wait for a model, another refresh, or chat delivery to welcome someone.
+    this.emit('catchup', card);
+    const work = this.requestSummary(viewer).then(async (result) => {
+      if (!result || generation !== this.generation) return;
+      const summary =
+        result.viewer === viewer
+          ? result.summary
+          : personalizeSummary(result.summary, viewer);
+      if (this.wallNow() - startedAt < card.durationMs) {
+        this.emit('catchup', { ...card, summary, phase: 'update' });
+      }
+      const reply = {
+        ts: this.now(),
+        user: viewer,
+        text: summary.chatReply,
+        parentId: parent?.meta?.messageId,
+        status: this.mode === 'demo' ? 'would post in chat' : 'sending'
+      };
+      this.replies.unshift(reply);
+      this.replies = this.replies.slice(0, 12);
+      joiner.status =
+        this.mode === 'demo' ? 'Caught up' : 'Recap ready; sending chat';
+      this.publish();
+      try {
+        await this.sendChat(reply);
+        if (generation !== this.generation) return;
+        if (this.mode !== 'demo') reply.status = 'posted in chat';
+        joiner.status = 'Caught up';
+      } catch (error) {
+        if (generation !== this.generation) return;
+        reply.status =
+          error.code === 'SHARED_CHAT'
+            ? 'Chat paused during Shared Chat'
+            : 'Chat delivery failed';
+        joiner.status = 'Recap ready; chat not sent';
+      }
+      this.publish();
+    });
+    return this.track(work);
   }
   state() {
     const now = this.now(),
@@ -172,6 +242,7 @@ export class Clerk {
       generation: this.generation,
       mode: this.mode,
       channel: this.channel,
+      streamInfo: this.streamInfo,
       now,
       windowMs: this.timeline.windowMs,
       status: this.status,

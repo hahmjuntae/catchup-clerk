@@ -43,7 +43,7 @@ async function liveFixture({
     summarizeFn:
       summary || (async (items, options) => mockSummarize(items, options)),
     emit: (type, data) => {
-      if (type === 'catchup') cards.push(data);
+      if (type === 'catchup' && data.phase === 'initial') cards.push(data);
     }
   });
   const twitch = new Twitch({

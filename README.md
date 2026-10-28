@@ -2,7 +2,7 @@
 
 Catch-up Clerk gives late arrivals context from the last 20 minutes of Twitch chat and stream events. A viewer types `!catchup` and gets a threaded chat reply of at most 450 characters, a 12-second overlay welcome with three bullets, and an entry in the streamer's Clerk panel.
 
-The panel shows the current topic, timestamped key moments, open questions and running jokes, recent events, recent catch-up requesters, and a short line the streamer can read aloud. It receives state updates twice per second and refreshes its summary every 15 seconds. Broadcasters and moderators can use `!recap` to request a summary immediately.
+The panel shows the current topic, timestamped key moments, open questions and running jokes, recent events, recent catch-up requesters, and a short line the streamer can read aloud. Live clock times use each viewer's browser time zone; timestamps stay in epoch milliseconds in the server/API. Demo times consistently use the fictional stream's UTC clock. It receives state updates twice per second and refreshes its summary every 15 seconds. Broadcasters and moderators can use `!recap` to request a summary immediately.
 
 Node 26, ES modules, native HTTP/fetch/WebSocket, and browser JavaScript. No runtime packages or UI frameworks. Wrangler is the only direct development dependency.
 
@@ -18,7 +18,7 @@ No install, API key, or Twitch account is needed for the Node demo. Open **http:
 
 The demo uses a fictional channel, LanternLark, playing a fictional roguelike, Ember Vault. The fixture has 404 chat messages and 20 stream events over 25 minutes. It includes a 120-viewer raid, subscriptions, a gift-sub bomb, cheers, a boss fight, an emotional support pot, and a repeated lantern question.
 
-The replay opens at minute 18 with earlier context loaded. Use **Restart** to replay from zero or **Jump to catch-up** to reach the three scripted requests at 21:30, 23:00, and 24:30. At the default 20× speed, those requests arrive 4.5 seconds apart; overlay cards queue and each stays visible for 12 real seconds. The replay waits 45 real seconds at the end before looping. **Join the conversation** inserts a simulated `!catchup` request.
+The replay opens at minute 18 with earlier context loaded. Use **Restart** to replay from zero or **Jump to catch-up** to reach the three scripted requests at 21:30, 23:00, and 24:30. At the default 20× speed, those requests arrive 4.5 seconds apart. Each new request immediately replaces the visible welcome card and starts a 12-real-second lifetime; a later AI update does not extend it. The replay waits 45 real seconds at the end before looping. **Join the conversation** inserts a simulated `!catchup` request.
 
 Use `/demo?speed=50`, the replay speed selector, or `DEMO_SPEED=50 npm run demo` to change speed (1–100×). Cooldowns use the simulated stream clock in demo mode and real time in live mode. Pause stops the replay clock; visible cards still expire in real time. In the Node demo, controls affect all connected views.
 
@@ -31,7 +31,7 @@ Replies in demo mode are labeled **would post in chat**. No Twitch requests are 
 3. Copy `.env.example` to `.env`. Set `TWITCH_CLIENT_ID`, `TWITCH_CLIENT_SECRET`, and `TWITCH_CHANNEL` (the channel login, without `#` or a URL).
 4. Run `npm run dev` and open `http://localhost:3101/auth/login`.
 5. Authorize as the channel owner for the full set of events. Open `/panel`. From a different viewer account, send `!catchup` in that channel.
-6. Add an OBS Browser Source with URL `http://localhost:3101/overlay`, width **1920**, height **1080**. Its background is transparent. The panel includes a smaller preview over an illustrated backdrop; it is not actual game footage.
+6. Add an OBS Browser Source with URL `http://localhost:3101/overlay`, width **1920**, height **1080**. Its background is transparent. In live mode, the panel preview uses a neutral backdrop with the channel name and the latest known Twitch category/title (or "Your stream" until a channel update arrives). The illustrated Ember Vault backdrop appears only in demo mode.
 
 For a **single-account live test**, set `ALLOW_SELF_COMMANDS=1` in `.env` and restart `npm run dev`. Authorize as the broadcaster, then type `!catchup` from that same account. It uses the normal cooldowns and sends a threaded reply, updates the panel, and shows the overlay. `!recap` still requires broadcaster or moderator privileges. This flag is a testing aid and is **off by default**; unset it or set it to `0` after testing.
 
@@ -76,6 +76,9 @@ Each result is logged by type and status, including missing permission/scope fai
 
 ## Summarization
 
+A catch-up card appears before waiting for the model or chat delivery. It uses the latest panel summary when that summary is at most 30 real seconds and 60 stream-clock seconds old; otherwise it starts with a deterministic summary of the current window. The viewer name is personalized immediately. An in-flight panel summary is shared with catch-up requests instead of queueing a duplicate call. A completed result updates only the still-visible matching card, then supplies the threaded chat reply. Responses from an earlier replay generation are discarded. AI failure still falls back locally.
+
+
 The ring buffer keeps a 20-minute window with a default cap of 5,000 total items. Late deliveries are sorted when read. Raw chat lines are truncated to 1,000 characters. Old items expire even when no new messages arrive.
 
 The digest counts top chatters, collapses repeated text, counts emote-only floods, and samples up to 70 distinct chat lines evenly across the window. Every event still present in the ring is retained, with compact text. The usual prompt target is 14,000 characters; the event section can exceed this in an unusually event-heavy window. The overall timeline cap still applies.
@@ -90,7 +93,7 @@ LLM_MODEL=gemini-3.1-flash-lite
 Set `LLM_API_KEY` in `.env` for Node or as a Worker secret for the hosted demo. The key stays server-side. The system prompt treats chat as untrusted data, asks for evidence-based claims, and avoids inventing unseen gameplay. Output has this shape:
 
 ```text
-{ topic, bullets[3], moments[{t, label}], jokes[], tellNewcomers, chatReply }
+{ topic, bullets[3], moments[{t: epochMilliseconds, label}], jokes[], tellNewcomers, chatReply }
 ```
 
 Markdown fences and trailing JSON commas are repaired. Fields are validated, missing fields filled from a local result, and text lengths capped. Missing keys, network failures, non-2xx responses, invalid JSON, and the eight-second deadline all fall back to a deterministic keyword/event summarizer. The UI identifies AI summaries, local summaries, and fallbacks. The mock is intentionally tuned to the fixture's vocabulary; unfamiliar streams receive a more general event/chat recap.
@@ -182,9 +185,9 @@ npm run fixture
 npm run demo
 ```
 
-Tests cover timeline expiration and capacity, a 5,000-message flood, commands and cooldowns, deterministic summaries, JSON repair, LLM failure/timeout, the complete three-viewer replay, stale async results, Worker validation/limits/assets routes, EventSub welcome/notification/reconnect, event normalization, token permissions/refresh, OAuth state rejection, channel-bound chat throttling, self-command testing, broadcaster context, outgoing reply-ID filtering (including early echoes), and startup logs.
+Tests cover timeline expiration and capacity, a 5,000-message flood, commands and cooldowns, deterministic summaries, JSON repair, LLM failure/timeout, the complete three-viewer replay, stale async results, Worker validation/limits/assets routes, EventSub welcome/notification/reconnect, event normalization, token permissions/refresh, OAuth state rejection, channel-bound chat throttling, self-command testing, broadcaster context, outgoing reply-ID filtering (including early echoes), startup logs, local-time rendering, epoch moments across midnight, live preview metadata, custom replay speeds, immediate cards, shared in-flight summaries, and overlay update deadlines.
 
-For a recording, open `/demo` at 1920×1080, click **Jump to catch-up**, and let all three welcome cards play. The on-page game scene is a CSS illustration. `/panel` is also suitable as an OBS custom browser dock. `Ctrl+C` stops a foreground server.
+For a recording, open `/demo` at 1920×1080 and click **Jump to catch-up**. Use 5× replay speed if you want each of the three cards to finish its full 12 seconds before the next requester arrives. The selector includes 1, 2, 5, 10, 20, 50, and 100×, plus a custom URL speed when needed. The on-page game scene is a CSS illustration. `/panel` is also suitable as an OBS custom browser dock. `Ctrl+C` stops a foreground server.
 
 ## Privacy and limitations
 
