@@ -17,6 +17,9 @@
 }
 html:has(body.overlay-page){background:transparent;color-scheme:normal;overflow:hidden;scrollbar-gutter:auto}
 body{background:var(--bg);color:var(--text);font-family:var(--font-sans);font-size:15px;line-height:1.5;font-variant-numeric:tabular-nums}
+/* ds.css body 스크롤 상자 대신 문서 스크롤 우선 */
+html:not(:has(body.overlay-page)){height:auto;overflow:visible}
+body:not(.overlay-page){height:auto;overflow-x:clip;overflow-y:visible}
 button,a,input,select{-webkit-tap-highlight-color:transparent}
 a{color:inherit;text-decoration:none}
 button,select{cursor:pointer}
