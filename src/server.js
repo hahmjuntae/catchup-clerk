@@ -49,7 +49,7 @@ const server=createServer(async(req,res)=>{
     const path=resolve(dir,relative);
     if(!path.startsWith(dir+sep) || relative.startsWith('.')) return json(res,{error:'Not found'},404);
     const data=await readFile(path);
-    const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml'}[extname(path)]||'application/octet-stream';
+    const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.woff2':'font/woff2'}[extname(path)]||'application/octet-stream';
     res.writeHead(200,{'Content-Type':`${mime}; charset=utf-8`,'Cache-Control':'no-cache'});res.end(req.method==='HEAD'?undefined:data);
   } catch(error) { if(!res.headersSent) json(res,{error:error.code==='ENOENT'?'Not found':'Request failed'},error.code==='ENOENT'?404:400); else res.end(); }
 });
